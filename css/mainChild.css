@@ -1,0 +1,67 @@
+
+div.container {
+    margin-left: 130px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+    div.menu {
+        width: 250px;
+        padding-top: 15px;
+        margin: 5px 50px 75px 0;
+        border: 1px solid #eee;
+        text-align: center;
+        line-height: 1.3em;
+    }
+
+    .name {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    img {
+        padding: 5px 0;
+    }
+    .size {
+        font-size: 12px;
+    }
+    .price {
+        font-weight: bold;
+        font-family: serif;
+    }
+    .buy {
+        background-color: #ffba5f;
+        padding: 2px;
+        font-size: 17px;
+    }
+
+div.top {
+    width: 100px;
+    position: fixed;
+    bottom: 5px;
+    left: 15px;
+}
+    .top a {
+        display: block;
+        width: 13px;
+        text-align: center;
+        text-decoration: none;
+        color:#333;
+    }
+div.input {
+    width: 100px;
+    position: fixed;
+    bottom: 75px;
+}
+
+    /* input {
+        width: 60px;
+        height: 30px;
+        border: 0;
+        font-size: 14px;
+        padding: 8px 10px;
+        margin-top: 10px;
+        background-color: #4d4d4d;
+        color:#fff;
+        cursor: pointer;
+    } */

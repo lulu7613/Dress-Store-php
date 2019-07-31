@@ -1,0 +1,85 @@
+
+/* header */
+header {
+  background: #fff url(../images/header4.jpg) 0 0 repeat-x;
+}
+
+a.logo-name {
+	font-size: 2.0rem;
+}
+
+/* 圖片輪播 */
+.bg-lighter {
+    background-color:rgba(0, 0, 0, 0.3)
+}
+
+/* main */
+.main {
+  margin-bottom: 75px;
+}
+
+.hot-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hot-mark {
+  position: relative;
+  left: -25px;
+  top: 12px;
+  width: 150px;
+  line-height: 30px;
+  padding-left: 35px;
+  transform:rotate(-35deg);
+}
+
+/* footer */
+.footer {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: #333;
+}
+
+
+/* 帳戶及購物車 */
+.btn-cart {
+  position: relative;
+}
+
+.btn-cart .badge {
+  position: absolute !important;
+  right: 0;
+}
+
+
+/* 回頂部 */
+.go-top {
+  width: 50px;
+  height: 50px;
+  background: url(../images/goTop-01.png) 0 0 no-repeat;
+  background-size: cover;
+  position: fixed;
+  right: 10px;
+  bottom: 70px;
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .go-top:hover {
+    opacity: 1;
+  }
+  
+}
+
+
+/* 通用 */
+.main-btn-color {
+    background-color: #eee;
+}
+
+
+/* count.html */
+.count-radius {
+  border-radius: 50px;
+}

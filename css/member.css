@@ -1,0 +1,29 @@
+
+.login-border {
+  border-top: 5px solid #eb8d00 !important;
+}
+
+.member-title {
+  color: #333;
+  letter-spacing: 0.2em;
+}
+
+.dress-color {
+  background-color:#eb8d00;
+}
+.dress-color:hover {
+  background-color:#d38208;
+}
+
+.member-link {
+  background-color:#e6e6e6;
+}
+.member-link:hover {
+  background-color:#cecece;
+}
+
+.member-ok-title {
+  background-color: #eee;
+  border: 1px solid #eee;
+}
+

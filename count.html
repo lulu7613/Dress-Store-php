@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+  <script src="js/jquery-3.3.1.js"></script>
+  <title>翠絲服飾｜最時尚的衣店</title>
+</head>
+
+<body>
+  <!-- header 店名與選單列表 -->
+  <header class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand font-weight-bolder logo-name" href="index.html">翠絲服飾</a>
+      <button class="navbar-toggler bg-info" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown active">
+            <a class="font-weight-bold nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              主題館
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <a class="dropdown-item" id="sclass-0" href="/Dress/index.html?cid=0">全部</a>
+              <a class="dropdown-item" id="sclass-1" href="/Dress/index.html?cid=1">文字</a>
+              <a class="dropdown-item" id="sclass-2" href="/Dress/index.html?cid=2">圖騰</a>
+              <a class="dropdown-item" id="sclass-3" href="/Dress/index.html?cid=3">搞怪</a>
+              <a class="dropdown-item" id="sclass-4" href="/Dress/index.html?cid=4">人物</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link font-weight-bold" href="/Dress/index.html?special=1">人氣精選 <span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link font-weight-bold" href="/Dress/index.html?special=2">清倉特賣 <span
+                class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- 購物手續 -->
+  <main class="container mt-5 main">
+
+    <!-- 步驟提示 -->
+    <div class="form-row">
+      <div class="col-12 col-sm">
+        <div class="alert alert-success text-center count-radius" role="alert">
+          1. 輸入訂單資料
+        </div>
+      </div>
+      <div class="col-12 col-sm">
+        <div class="alert alert-light text-center count-radius" role="alert">
+          2. 金流付款
+        </div>
+
+      </div>
+      <div class="col-12 col-sm">
+        <div class="alert alert-light text-center count-radius" role="alert">
+          3. 完成
+        </div>
+      </div>
+    </div>
+
+    <!-- 各步驟的內容 -->
+    <div class="row justify-content-center court-content mt-5">
+      <div class="col-md-9">
+        <div class="accordion" id="accordionExample">
+
+          <div class="card">
+            <div class="card-header d-flex justify-content-between" id="headingOne">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                顯示購物車細節
+              </button>
+              <div class="align-self-center mb-0 h4 font-weight-bold"></div>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <table class="table">
+                <thead>
+                  <tr class="text-center align-content-center">
+                    <th scope="col">商品</th>
+                    <th scope="col">顏色</th>
+                    <th scope="col">尺寸</th>
+                    <th scope="col">數量</th>
+                    <th scope="col" class="text-right">金額</th>
+                  </tr>
+                </thead>
+                <tbody class="cart-content">
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- footer 帳戶及購物車 -->
+  <footer class="container-fluid fixed-bottom bg-light">
+    <div class="row">
+
+      <nav class="col-12 text-center col-md-5">
+        <ul class="nav justify-content-center justify-content-md-start mr-md-3">
+          <li class="nav-item">
+            <a class="nav-link" href="member/login.php">
+              <i class="fas fa-user-alt text-dark fa-2x" data-toggle="tooltip" aria-hidden="true" title="我的帳戶"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-cart" data-flip="false" data-toggle="modal" data-target="#cart-modal">
+              <i class="fas fa-shopping-cart text-dark fa-2x" data-toggle="tooltip" aria-hidden="true" title="購物車"></i>
+              <span class="badge badge-pill badge-danger add-cart-num"></span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer col text-center col-md-7 text-md-right align-self-end">蔡昀芷製作 / 圖片素材均來自網路</div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-warning text-dark">
+          <h5 class="modal-title" id="exampleModalLabel">已選購商品</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr class="text-center">
+                <th scope="col">商品</th>
+                <th scope="col">顏色</th>
+                <th scope="col">尺寸</th>
+                <th scope="col">數量</th>
+                <th scope="col" class="text-right">小計</th>
+              </tr>
+            </thead>
+            <tbody class="cart-content">
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+          <a href="/Dress/count.html" class="btn btn-warning">付款</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 回頂部 -->
+  <div class="go-top"></div>
+
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/count.js"></script>
+
+</body>
+
+</html>
